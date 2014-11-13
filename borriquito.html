@@ -1,0 +1,253 @@
+﻿<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Novena</title>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		<meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+		
+		
+		<!-- JS -->
+		<script src="js/jquery-1.6.4.min.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		
+		<script src="js/tabs.js"></script>
+		
+		<!-- Tweet -->
+		
+		
+		<!-- ENDS Tweet -->
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script  src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
+		
+		<!-- prettyPhoto -->
+		<script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css"  />
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"  />
+		<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- Flex Slider -->
+		<link rel="stylesheet" href="css/flexslider.css" >
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- ENDS Flex Slider -->
+		
+		<!-- Less framework -->
+		<link rel="stylesheet" media="all" href="css/lessframework.css"/>
+		
+		<!-- modernizr -->
+		<script src="js/modernizr.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		
+		
+		
+		<!-- SKIN -->
+		<link rel="stylesheet" media="all" href="css/skin.css"/>
+		<script>
+		$(document).ready(function(){
+			$(".home-block").hide(0).delay(300).fadeIn(1000);
+			
+		});
+		</script>
+        <script>
+		function goBack()
+		{
+			window.history.back();
+			history.back();
+			window.history.go(-1);
+			navigator.app.backHistory();
+		}
+		</script>
+        
+        <script type="text/javascript" charset="utf-8">
+
+            function onLoad()
+            {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+            }
+
+            function exitFromApp()
+             {
+                navigator.app.exitApp();
+             }
+
+        </script>
+		
+
+	</head>
+	
+	<body lang="es">
+		
+		<header class="clearfix">
+		
+		
+			<div class="wrapper clearfix" >
+				<table border="0" style="width: 100%;" >
+				<tr>
+				<td style="vertical-align:bottom;"><a href="index.html" id="logo" ><img src="img/logo.png"/></a></td>
+				<td style="vertical-align:bottom; text-align: right; width: 33px;"><a href="index.html"><img src="img/home.png"></a></td>
+				<td style="vertical-align:bottom; text-align: right; width: 33px;"><a onClick="goBack()"><img src="img/back.png"></a></td>
+                <td style="vertical-align:bottom; text-align: right; width: 33px;">
+                	<button name="buttonClick" onclick="exitFromApp()"> </button>
+                </td>
+				</tr>
+				</table>
+
+			</div>
+		</header>
+		
+		
+
+		
+		<!-- MAIN -->
+		<div id="main">	
+			<div class="wrapper">
+
+				
+				
+				<!-- home-block -->
+	        	<div class="home-block" >
+				<!--<h2 class="home-block-heading"><span id="title-span">DÍA 1</span></h2>-->
+					<div>
+						<h4 class="home-block-heading"><span id="title-span2">Arre borriquito</span></h4>
+						<div align="center">
+						<iframe style="display: none;" id="foo" width="238" height="48" frameborder="0" allowfullscreen="" scrolling="no" src="http://www.ivoox.com/player_ek_2506440_1.html"></iframe>
+						<div id="loadingMessage"><em>Conectándose a internet para cargar la canción <br/> Por favor espere</em></div>
+						<script>
+						$('#foo').load(function () {
+							$('#loadingMessage').css('display', 'none');
+							$('#foo').css('display', '');
+						});
+						</script>
+						</div>
+						<h4 class="home-block-heading"><span id="title-span2">Letra</span></h4>
+						<p style="text-align: center;">
+						Tengo  puesto un nacimiento<br />
+						en  un rincón de mi casa<br />
+						con  pastores y pastoras<br />
+						y  un palacios en la montaña <br />
+						ahí  vive el rey herodes<br />
+						ahí  viven sus soldados<br />
+						todos  están esperando <br />
+						que  lleguen los reyes magos.<br />
+						<br />
+						Arre  borriquito, arre burro arre,<br />
+						anda  más deprisa que llegamos tarde.<br />
+						Arre  borriquito vamos a Belén,<br />
+						que  mañana es fiesta<br />
+						y  al otro también.<br />
+						<br />
+						En  el cerro hay una Estrella,<br />
+						que  a los Reyes Magos guía,<br />
+						hacia  Belén para ver,<br />
+						a  Dios hijo de María.<br />
+						<br />
+						Cuando  pasan los monarcas,<br />
+						sale  la gente al camino,<br />
+						y  alegres se van con ellos,<br />
+						para  ver al tierno Niño.<br />
+						<br />
+						Arre  borriquito, arre burro arre,<br />
+						anda  más deprisa que llegamos tarde.<br />
+						Arre  borriquito vamos a Belén,<br />
+						que  mañana es fiesta<br />
+						y  al otro también.<br />
+						<br />
+						Hacia  el portal de Belén<br />
+						se  dirige un pastorcito<br />
+						cantando  de esta manera <br />
+						para  alegrar el camino<br />
+						Ha  nacido el niño Dios<br />
+						en  un portal miserable<br />
+						Para  enseñarle a los hombres<br />
+						la  humildad de su linaje<br />
+						<br />
+						Arre  borriquito, arre burro arre,<br />
+						anda  más deprisa que llegamos tarde.<br />
+						Arre  borriquito vamos a Belén,<br />
+						que  mañana es fiesta<br />
+						y  al otro también.<br />
+						<br />
+						Arre  borriquito, arre burro arre,<br />
+						anda  más deprisa que llegamos tarde.<br />
+						Arre  borriquito vamos a Belén,<br />
+						que  mañana es fiesta<br />
+						y  al otro también.<br />
+						<br />
+						Arre  borriquito, arre burro arre,<br />
+						anda  más deprisa que llegamos tarde.<br />
+						Arre  borriquito vamos a Belén,<br />
+						que  mañana es fiesta<br />
+						y  al otro también.
+						</p>
+					</div>
+	        	</div>
+	        	<!-- ENDS home-block -->
+	        	
+	        	
+
+	        		        	
+			</div>
+		</div>
+		<!-- ENDS MAIN -->
+		
+		
+		<footer>
+			<div class="wrapper">
+										
+				<div class="footer-bottom" id="banners"  align="center">
+					<!--<div >Imagen publicitaria</div>-->
+					<script>
+					var url = "http://cec.org.co/images/banners_aplicacion/test.json?callback=?";
+					$.ajax({
+					type: 'GET',
+					url: url,
+					async: false,
+					jsonpCallback: 'jsonp',
+					contentType: "application/json",
+					dataType: 'jsonp',
+					success: function(json) {
+						console.dir(json.banners);
+						console.log(json.banners.length);
+						var random = Math.floor((Math.random()*json.banners.length));
+						var link = document.createElement("a");
+						link.onclick = function(){window.open(json.banners[random]["target"], '_system', 'closebuttoncaption=Regresar');};
+						link.href = "#";
+						var banner = document.createElement("img");
+						banner.src = json.banners[random]["image"];
+						banner.style.width = "100%";
+						banner.style.height = "auto";
+						banner.style.maxHeight = "80px";
+						banner.style.maxWidth = "400px";
+						link.appendChild(banner);
+						var b = document.getElementById("banners");
+						b.appendChild(link);
+					},
+					error: function(e) {
+					console.log(e.message);
+					}
+					});
+					</script>
+				</div>
+				
+			</div>
+		</footer>
+					
+	</body>
+	
+</html>

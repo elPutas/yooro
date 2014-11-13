@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="Liturgia" version="0.8">
+
+	<name>Yo oro por la paz</name>
+	<description>Yo oro por la paz</description>
+	<author href="www.houselab.co" email="talktome@houselab.co">Houselab Team</author>
+
+	<gap:platforms>
+		<gap:platform name="ios" />
+		<gap:platform name="android" />
+		<gap:platform name="winphone" />
+	</gap:platforms>
+
+	<icon src="icon-128.png" width="128" height="128" gap:role="default" />
+
+	<preference name="permissions" value="none"/>
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="target-device" value="universal" />
+	
+	<preference name="android-minSdkVersion" value="8" />
+	<preference name="android-targetSdkVersion" value="16" />
+	<preference name="android-installLocation" value="auto" />
+
+	<gap:splash src="splash.png" width="1600" height="2560" />
+	
+	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+
+</widget>
