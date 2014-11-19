@@ -59,7 +59,9 @@
 		<link rel="stylesheet" media="all" href="css/skin.css"/>		
         <script>
 		$(document).ready(function(){
-			$(".home-block").hide(0).delay(300).fadeIn(1000);
+			$(".home-block, header, footer").hide(0).delay(5300).fadeIn(1000);
+
+			$('#splash').show(0).delay(5000).fadeOut(1000);
 			
 		});
 		
@@ -77,20 +79,29 @@
 
             function onLoad()
             {
-                  document.addEventListener("deviceready", onDeviceReady, true);
+                document.addEventListener("deviceready", onDeviceReady, true);
             }
 
             function exitFromApp()
-             {
+            {
                 navigator.app.exitApp();
-             }
+            }
+
+            function splash()
+            {
+            	
+            }
 
         </script>
 
 	</head>
 	
 	<body lang="es" onLoad="onLoad();">
-		
+
+		<div id="splash">
+			<img id="imgSplash" src="splash.png">
+		</div>
+
 		<header class="clearfix">
                 
 			<div class="wrapper clearfix">

@@ -185,6 +185,15 @@ aside{
 	margin-right: 0px;
 }
 
+/* SPLASH ------------------------------------------------------------*/
+#splash{
+	display: none;
+}
+
+#imgSplash{
+	width: 100%;
+	z-index: 500000;
+}
 
 /* COMBO NAVIGATION ------------------------------------------------------------*/
 #comboNav {
