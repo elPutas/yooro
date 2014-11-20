@@ -58,12 +58,34 @@
 		<!-- SKIN -->
 		<link rel="stylesheet" media="all" href="css/skin.css"/>		
         <script>
-		$(document).ready(function(){
-			$(".home-block, header, footer").hide(0).delay(4300).fadeIn(1000);
-
-			$('#splash').show(0).delay(4000).fadeOut(1000);
+        var justOnce = true
+		$(document).ready(function()
+		{
+			justOnce = getQueryVariable("noSplash");
 			
+			if(justOnce != "false")
+			{
+
+				$(".home-block, header, footer").hide(0).delay(4300).fadeIn(1000);
+				$('#splash').show(0).delay(4000).fadeOut(1000);
+			}
 		});
+
+		function getQueryVariable(variable) 
+	    {
+
+	        var query = window.location.search.substring(1);
+	        var vars = query.split("&");
+	        for (var i=0;i<vars.length;i++) 
+	        {
+	            var pair = vars[i].split("=");
+	            if (pair[0] == variable) 
+	            {
+	                return pair[1];
+	            }
+	        } 
+	            
+	    }
 		
 		function goBack()
 		{
@@ -71,6 +93,9 @@
 			history.back();
 			window.history.go(-1);
 			navigator.app.backHistory();
+
+
+			alert("back");
 		}
 		
 		</script>
